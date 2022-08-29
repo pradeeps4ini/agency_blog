@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  
-  {% block content %}
+  {% include "partials/site-head.html" %}
+  <main tabindex="-1" id="main-content">
+    {% block content %}
 
-  {% endblock %}
+    {% endblock %}
+  </main>
 
 </body>
 </html>
